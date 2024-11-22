@@ -10,14 +10,15 @@ import Login from "./auth/login"
 import Register from "./auth/register"
 import Footer from "./components/footer"
 import Header from './components/header';
+//import Loading from './components/louding';
 
 function App() {
-  const mode = "light";
+  const mode = "dark";
   return (
-    <div className={`App + ${mode} + h-10`}>
+    <div className={`App + ${mode}`}>
       <Header/>
-      <Home/>
-      <Footer/>
+      {/* <Loading/> */}
+      <div className='padding-top'>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/login" element={<Login/>}/>
@@ -30,6 +31,8 @@ function App() {
           <Route path="profile" element={<AdminProfile/>}/>
         </Route>
       </Routes>
+      </div>
+      <Footer/>
     </div>
   );
 }
