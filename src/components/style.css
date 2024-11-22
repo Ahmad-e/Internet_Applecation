@@ -1,0 +1,20 @@
+.header{
+    background-color: inherit;
+}
+.signIn {
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    margin-left: 7px
+}
+.header-link {
+    color: inherit;
+    transition-duration: 0.3s;
+}
+.header-link:hover {
+    color: #930677f7;
+    transform: scale(1.04);
+}
+.footer {
+    background-color: #7b0563fd;
+}
