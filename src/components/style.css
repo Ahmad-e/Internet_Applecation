@@ -1,7 +1,7 @@
 .header{
     background-color: #7b056347;
 }
-.signIn {
+.signup {
     border: none;
     background-color: transparent;
     color: inherit;
@@ -15,21 +15,20 @@
     color: #f4f0f0;
     transform: scale(1.04);
 }
+.header-nav {
+    display: none;
+}
 .footer {
     background-color: #7b0563fd;
+    position: relative;
+    z-index: 2;
 }
 .footer .socialLink{
     cursor: pointer;
 }
 .loading {
-    width: 100vw;
-    height: 100vh;
     background-color: rgb(0 0 0 / 50%);
-    position: fixed;
     z-index: 5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .loading::before {
     content: "";
@@ -53,5 +52,57 @@
     }
     100%{
         transform: rotate(360deg);
+    }
+}
+.sidebar {
+    min-height: 100vh;
+    width: 20%;
+    position: fixed;
+    background-color: inherit;
+    z-index: 1;
+    color: inherit;
+    box-shadow: 0px 0px 0px 1px rgb(0 0 0/0.2);
+}
+.sidebar .title {
+    padding: 15px 20px 5px;
+    color: #ccc;
+}
+.sidebar .link {
+    border-radius: 10px;
+    color: inherit;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition-duration: 0.3s;
+    box-shadow: 0px 0px 0px 1px rgb(0 0 0/0.2);
+}
+.sidebar .link:hover {
+    color: black;
+}
+/* .sidebar .active,
+.sidebar .active:hover {
+    background-color: #f2f3fe;
+    color: #7b0563fd;
+} */
+.sidebar .link .link-name {
+    font-size: 21px;
+    padding-left: 25px;
+}
+@media (max-width: 991px) {
+    .sidebar .link .link-name {
+        display: none;
+    }
+}
+.file .title {
+    color: inherit;
+}
+@media (max-width: 526px) {
+    .sidebar{
+        display: none;
+    }
+    .header-nav {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
