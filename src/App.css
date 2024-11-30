@@ -2,6 +2,7 @@
     --main-color: #930677f7;
 }
 .App {
+    box-sizing: border-box;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     text-align: center;
 }
@@ -21,6 +22,7 @@
 }
 a {
     text-decoration: none;
+    color: inherit;
 }
 .flex {
     display: flex;
@@ -38,6 +40,8 @@ a {
     color: #fffdfd;
     transition-duration: 0.3s;
     border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
 }
 .main-btn:hover {
     background-color: #7b0563fd;
@@ -52,5 +56,36 @@ a {
 }
 .padding-top{
     padding-top: 80px;
-    height: 100vh;
+    min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .padding-top{
+        padding-top: 77px;
+    }
+}
+@media (max-width: 526px) {
+    .padding-top{
+        padding-top: 167px;
+    }
+}
+@media (max-width: 359px){
+    .padding-top{
+        padding-top: 207px;
+    }
+}
+@media (max-width: 269px) {
+    .padding-top{
+        padding-top: 247px;
+    }
+}
+@media (max-width: 239px) {
+    .padding-top{
+        padding-top: 287px;
+    }
+}
+@media (max-width: 196px) {
+    .padding-top{
+        padding-top: 317px;
+    }
 }

@@ -1,0 +1,50 @@
+.form-btn{
+    width: 100%;
+    outline: none;
+    border: none;
+}
+.input-div{
+    height: 95px;
+}
+#input {
+    background-color: transparent;
+    outline: none;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 20%); 
+    border-radius: 5px;
+    border: none;
+    font-family: Lato, sans-serif;
+    border-bottom: 2px solid #ccc;
+    padding: 5px 10px;
+}
+.error {
+    color: red;
+    font-size: 15px;
+    margin: 5px 0 10px;
+}
+label {
+    position: absolute;
+    left: 8px;
+    top: -29%;
+    color: grey;
+    font-size: small;
+    transition-duration: 0.3s;
+}
+#input:placeholder-shown + label {
+    opacity: 0;
+    top: 0px;
+}
+@media (max-width: 681px) {
+    .signup h3{
+        padding-top: 20px;
+    }
+    .name{
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .name div,
+    .name div #input{
+        width: 100%;
+    }
+}

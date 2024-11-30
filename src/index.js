@@ -8,6 +8,7 @@ import { Provider } from 'react-redux';
 import store from './store/store';
 import "./pages/style.css"
 import "./components/style.css"
+import "./auth/style.css"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
